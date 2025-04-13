@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-fraunces: "Fraunces", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+
+  --black: #1c232b;
+  --cream: #f2eae2;
+  --green-500: #3d8168;
+  --grey: #6c7289;
+  --white: #ffffff;
+  --green-700: #1a4032;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-preset-1 {
+  font-family: var(--font-fraunces);
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.text-preset-2 {
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+  line-height: 110%;
+  font-size: 14px;
+}
+
+.text-preset-3 {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  line-height: 160%;
+  font-size: 14px;
+}
+
+.text-preset-4 {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  line-height: 120%;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.text-preset-5 {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  line-height: 120%;
+  font-size: 13px;
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-cream {
+  color: var(--cream);
+}
+
+.text-green-500 {
+  color: var(--green-500);
+}
+
+.text-grey {
+  color: var(--grey);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-green-700 {
+  color: var(--green-700);
+}
+
+.container {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  margin-top: 80px;
+  background-color: var(--white);
+  margin-inline-start: 12px;
+  margin-inline-end: 13px;
+  border-radius: 10px;
+  margin-bottom: 172px;
+}
+
+body {
+  background-color: var(--cream);
+}
+
+h4 {
+  font-family: var(--text-present-4);
+  font-size: var(--size-present-4);
+}
+
+h1 {
+  width: 286px;
+}
+
+h6 {
+  width: 286px;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: var(--spacing-300);
+  margin-top: var(--spacing-400);
+}
+
+span {
+  text-decoration: line-through;
+  position: absolute;
+  left: 100%;
+  transform: translateY(80%);
+  margin-left: 10px;
+}
+
+button {
+  width: 286px;
+  height: 50px;
+  background-color: var(--green-500);
+  border-radius: var(--spacing-100);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--green-700);
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
+button img {
+  margin-right: 10px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+  }
+
+  .container {
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: #ffffff;
+    max-width: 600px;
+    padding-bottom: 0;
+    height: 456px;
+    margin-bottom: 0;
+    margin: 0;
+  }
+
+  .image {
+    width: 300px;
+  }
+
+  .image img {
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+  }
+
+  .text {
+    box-sizing: content-box;
+    width: 236px;
+    padding: var(--spacing-400);
+    margin-top: 0;
+  }
+
+  h1,
+  h6,
+  .text > div:last-child,
+  .button {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: row;
+    border-radius: 10px;
+    max-width: 600px;
+    padding-bottom: 0;
+    height: 456px;
+    margin-bottom: 0;
+  }
+
+  .image {
+    width: 300px;
+  }
+
+  .image img {
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+  }
+
+  .text {
+    box-sizing: content-box;
+    width: 236px;
+    padding: var(--spacing-400);
+    margin-top: 0;
+  }
+
+  h1,
+  h6,
+  .text > div:last-child,
+  .button {
+    width: 100%;
+  }
+}
